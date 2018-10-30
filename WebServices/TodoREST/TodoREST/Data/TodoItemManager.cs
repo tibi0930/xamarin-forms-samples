@@ -25,7 +25,7 @@ namespace TodoREST
 
 		public Task DeleteTaskAsync (TodoItem item)
 		{
-			return restService.DeleteTodoItemAsync (item.ID);
+			return restService.DeleteTodoItemAsync (item.id);
 		}
 	}
 }

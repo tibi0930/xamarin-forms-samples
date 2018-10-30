@@ -7,16 +7,16 @@ namespace TodoREST
 	{
 		bool alertShown = false;
 
-		public TodoListPage ()
+		public TodoListPage()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
 
 		protected async override void OnAppearing ()
 		{
 			base.OnAppearing ();
 
-			if (Constants.RestUrl.Contains ("developer.xamarin.com")) {
+			if (Constants.RestUrl.Contains ("localhost/tms/web/api/user/")) {
 				if (!alertShown) {
 					await DisplayAlert (
 						"Hosted Back-End",
@@ -32,7 +32,7 @@ namespace TodoREST
 		void OnAddItemClicked (object sender, EventArgs e)
 		{
 			var todoItem = new TodoItem () {
-				ID = Guid.NewGuid ().ToString ()
+				id = Guid.NewGuid().ToString()
 			};
 			var todoPage = new TodoItemPage (true);
 			todoPage.BindingContext = todoItem;

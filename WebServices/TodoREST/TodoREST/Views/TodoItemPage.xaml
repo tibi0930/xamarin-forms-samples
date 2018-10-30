@@ -5,7 +5,7 @@
 			 Title="Todo">
 	<StackLayout Margin="20" VerticalOptions="StartAndExpand">
 		<Label Text="Name" />
-		<Entry x:Name="nameEntry" Text="{Binding Path=Name}" Placeholder="task name" />
+		<Entry x:Name="nameEntry" Text="{Binding Path=name}" Placeholder="task name" />
 		<Label Text="Notes" />
 		<Entry x:Name="notesEntry" Text="{Binding Path=Notes}" />
 		<Label Text="Done" />

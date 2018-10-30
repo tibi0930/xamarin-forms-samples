@@ -29,8 +29,9 @@ namespace TodoREST
 		{
 			Items = new List<TodoItem> ();
 
-			// RestUrl = http://developer.xamarin.com:8081/api/todoitems
-			var uri = new Uri (string.Format (Constants.RestUrl, string.Empty));
+            // RestUrl = http://developer.xamarin.com:8081/api/todoitems
+            // RestUrl = http://localhost/tms/web/api/user
+            var uri = new Uri (string.Format (Constants.RestUrl, string.Empty));
 
 			try {
 				var response = await client.GetAsync (uri);

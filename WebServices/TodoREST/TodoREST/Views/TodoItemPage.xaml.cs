@@ -35,7 +35,7 @@ namespace TodoREST
 		void OnSpeakActivated (object sender, EventArgs e)
 		{
 			var todoItem = (TodoItem)BindingContext;
-			App.Speech.Speak (todoItem.Name + " " + todoItem.Notes);
+			App.Speech.Speak (todoItem.name + " " + todoItem.neptun);
 		}
 	}
 }
